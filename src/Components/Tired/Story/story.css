@@ -1,0 +1,76 @@
+.maincontainer{
+    background-image: url(https://i.imgur.com/rbjru1b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.btn {
+  width: 130px;
+  height: 40px;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #171717;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: all .4s;
+  margin:10%;
+}
+/* .description{
+  display: none;
+} */
+ 
+ .btn:hover {
+  border-radius: 5px;
+  transform: translateY(-10px);
+  box-shadow: 0 7px 0 -2px #f85959,
+   0 15px 0 -4px #39a2db,
+   0 16px 10px -3px #39a2db;
+ }
+ 
+ .btn:active {
+  transition: all 0.2s;
+  transform: translateY(-5px);
+  box-shadow: 0 2px 0 -2px #f85959,
+   0 8px 0 -4px #39a2db,
+   0 12px 10px -3px #39a2db;
+ }
+   
+   @keyframes slidernbw {
+    to {
+     background-position: 20vw;
+    }
+   }
+  
+  
+  
+  /* First text block */
+  .text-block-1 {
+    /* width: 1099px;
+    height: 131px;
+    left: 170px;
+    top: 325px; */
+    position: absolute;
+    text-align: center;
+    color: #FFF3B0;
+    font-size: 62px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  /* Second text block */
+  .text-block-2 {
+    width: 988px;
+    height: 112px;
+    left: 226px;
+    top: 475px;
+    position: absolute;
+    text-align: center;
+    color: #EDE0D4;
+    font-size: 38px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  
