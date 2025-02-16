@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Excited.css'; // Import the external CSS file
+import styles from './styles.module.css'; // Import the external CSS file
 
 export default function Excited() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); 
 
   const handleClick = (soundFile, route) => {
     const audio = new Audio(process.env.PUBLIC_URL + soundFile);
@@ -14,46 +14,46 @@ export default function Excited() {
   };
 
   return (
-    <div className="container">
+    <div className={`${styles.commoncontainer} ${styles.excitedcontainer}`}>
       {/* First Image and Text */}
       <img 
-        className="image image-1" 
+        className={`${styles.image} ${styles.image1}` }
         src="https://i.imgur.com/ucCacMh.png" 
         alt="Cheerful Tunes"
         onClick={() => handleClick('/pop-1.mp3', '/tunes')} 
       />
-      <div className="background-block block-1"></div>
-      <div className="text text-1">Cheerful Tunes for Happy Hearts!</div>
+      <div className={`${styles.backgroundBlock} ${styles.block1} ${styles.excitedblock1}`}></div>
+      <div className={`${styles.text} ${styles.text1}`}>Cheerful Tunes for Happy Hearts!</div>
 
       {/* Second Image and Text */}
       <img 
-        className="image image-2" 
+        className={`${styles.image} ${styles.image2}` }
         src="https://i.imgur.com/5uaA9eL.png" 
         alt="DIY Adventures"
         onClick={() => handleClick('/pop-1.mp3', '/crafts')} 
       />
-      <div className="background-block block-4"></div>
-      <div className="text text-2">Dive Into DIY Adventures!</div>
+      <div className={`${styles.backgroundBlock} ${styles.block4} ${styles.excitedblock4}`}></div>
+      <div className={`${styles.text} ${styles.text2}`}>Dive Into DIY Adventures!</div>
 
       {/* Third Image and Text */}
       <img 
-        className="image image-3" 
+        className={`${styles.image} ${styles.image3}` } 
         src="https://i.imgur.com/3Agpvsl.png" 
         alt="Game On"
         onClick={() => handleClick('/pop-1.mp3', '/excitedgames')} 
       />
-      <div className="background-block block-2"></div>
-      <div className="text text-3">Game On!</div>
+      <div className={`${styles.backgroundBlock} ${styles.block2} ${styles.excitedblock2}`}></div>
+      <div className={`${styles.text} ${styles.text3}`}>Game On!</div>
 
       {/* Fourth Image and Text */}
       <img 
-        className="image image-4" 
+        className={`${styles.image} ${styles.image4}` } 
         src="https://i.imgur.com/6wz6Vdl.png" 
         alt="Inner Artist"
         onClick={() => handleClick('/pop-1.mp3', '/drawing')} 
       />
-      <div className="background-block block-3"></div>
-      <div className="text text-4">Explore Your Inner Artist</div>
+      <div className={`${styles.backgroundBlock} ${styles.block3} ${styles.excitedblock3}`}></div>
+      <div className={`${styles.text} ${styles.text4}`}>Explore Your Inner Artist</div>
     </div>
   );
 }

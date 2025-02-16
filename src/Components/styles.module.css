@@ -1,12 +1,23 @@
 /* Container styling */
-.container {
+.commoncontainer {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: linear-gradient(180deg, #FDEB71 0%, #F8D1E0 50%, #A7E8FB 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid black;
   }
+.boredcontainer{
+   background: linear-gradient(180deg, #A9B9D6 0%, #BDC5D3 50%, #E6E6F0 100%);
+}
+.excitedcontainer{
+  background: linear-gradient(180deg, #FDEB71 0%, #F8D1E0 50%, #A7E8FB 100%);
+}
+.scaredcontainer{
+  background: linear-gradient(180deg, #B3DFFA 0%, #D4C2FC 50%, rgba(255, 69, 0, 0.60) 100%);
+}
+.curiouscontainer{
+  background: linear-gradient(180deg, rgba(163, 223, 242, 0.90) 0%, #FFD9C0 50%, #FFF8B0 75%);
+}
   
   /* Image styles */
   .image {
@@ -14,28 +25,28 @@
     cursor: pointer;
   }
   
-  .image-1 {
+  .image1 {
     width: 450px;
     height: 280px;
     left: 30px;
     top: 200px;
   }
   
-  .image-2 {
+  .image2 {
     width: 470px;
     height: 279.41px;
     left: 500px;
     top: 201px;
   }
   
-  .image-3 {
+  .image3 {
     width: 450px;
     height: 282px;
     left: 30px;
     top: 626px;
   }
   
-  .image-4 {
+  .image4 {
     width: 470px;
     height: 280.6px;
     left: 500px;
@@ -43,42 +54,68 @@
   }
   
   /* Background blocks */
-  .background-block {
+  .backgroundBlock {
     position: absolute;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   
-  .block-1 {
+  .block1 {
     width: 450px;
     height: 93px;
     left: 30px;
     top: 107px;
+    
+  }
+  
+  .block2 {
+    width: 450px;
+    height: 93px;
+    left: 30px;
+    top: 533px;
+   
+  }
+  
+  .block3 {
+    width: 470px;
+    height: 93px;
+    left: 500px;
+    top: 533px;
+      }
+  
+  .block4 {
+    width: 470px;
+    height: 93px;
+    left: 500px;
+    top: 107px;
+    
+  }
+
+  .excitedblock1{
     background: #800E13;
   }
-  
-  .block-2 {
-    width: 450px;
-    height: 93px;
-    left: 30px;
-    top: 533px;
+  .excitedblock2{
     background: #9E0059;
   }
-  
-  .block-3 {
-    width: 470px;
-    height: 93px;
-    left: 500px;
-    top: 533px;
+  .excitedblock3{
     background: #D03E1A;
   }
-  
-  .block-4 {
-    width: 470px;
-    height: 93px;
-    left: 500px;
-    top: 107px;
+  .excitedblock4{
     background: #001D3D;
   }
+  .boredblock1{
+    background: #582F0E;
+  }
+  .boredblock2{
+    background: #013A63;
+  }
+  .boredblock3{
+    background: #F25C54;
+  }
+  .boredblock4{
+    background: #FFC914;
+  }
+
+
   
   /* Text styles */
   .text {
@@ -90,7 +127,7 @@
     word-wrap: break-word;
   }
   
-  .text-1 {
+  .text1 {
     width: 352px;
     height: 44px;
     left: 70px;
@@ -98,7 +135,7 @@
     font-size: 28px;
   }
   
-  .text-2 {
+  .text2 {
     width: 337px;
     height: 30px;
     left: 570px;
@@ -106,7 +143,7 @@
     font-size: 28px;
   }
   
-  .text-3 {
+  .text3 {
     width: 316px;
     height: 49px;
     left: 70px;
@@ -114,7 +151,7 @@
     font-size: 30px;
   }
   
-  .text-4 {
+  .text4 {
     width: 308px;
     height: 45px;
     left: 570px;
