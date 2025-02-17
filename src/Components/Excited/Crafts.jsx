@@ -1,10 +1,11 @@
 import React from 'react'
 import crafts from '../../data/crafts.json'
+import styles from '../styles.module.css'
 
 export default function Crafts() {
   return (
     <div>
-        <div className='main'>
+        <div className ={`${styles.excitedcontainer} `} style={{padding:'5%'}}>
             <div className='crafts'>
                 {crafts.map((craft, index) => {
                     return (

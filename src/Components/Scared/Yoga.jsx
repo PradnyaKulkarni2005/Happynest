@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from '../styles.module.css'
 export default function Yoga() {
   const data = [
     "https://www.youtube.com/embed/cyvuaL_2avY",
@@ -13,7 +13,7 @@ export default function Yoga() {
   ];
 
   return (
-    <div>
+    <div className ={`${styles.scaredcontainer} `} style={{padding:'5%'}}>
       <div className="main">
         <div className="crafts">
           {data.map((url, index) => {

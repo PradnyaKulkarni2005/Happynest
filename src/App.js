@@ -11,27 +11,20 @@
   import Music from './Components/Tired/Music/Music.jsx';
   import Story from './Components/Tired/Story/Story.jsx';
   import Videos from './Components/Tired/Story/Videos.jsx';
+  import CreativeCalm from './Components/Tired/CreativeCalm';
   import Games from './Components/Excited/Games.jsx';
   import Crafts from './Components/Excited/Crafts.jsx';
 import DrawingPad from './Components/Excited/DrawingPad.jsx';
 import Cards from './Components/Tired/Cards.jsx';
+import Global from './Components/Curious/Global'
+import Calmcorner from './Components/Scared/Calmcorner'
+import Braverymsg from './Components/Scared/Braverymsg.jsx'
+import Yoga from './Components/Scared/Yoga.jsx';
   
   function App() {
-    // const [currentComponent, setCurrentComponent] = useState('home');
     return (
-      // State to manage which component to display
-      
-      <div className="App">
-        {/* Conditional Rendering Based on State */}
-        {/* {currentComponent === 'home' && (
-          <Home onImageClick={(component) => setCurrentComponent(component)} />
-        )}
-        {currentComponent === 'excited' && <Excited />}
-        {currentComponent === 'bored' && <Bored />}
-        {currentComponent === 'scared' && <Scared />}
-        {currentComponent === 'tired' && <Tired />}
-        {currentComponent === 'curious' && <Curious />} */}
-        <Router>
+       <div className="App">
+             <Router>
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/excited" element={<Excited/>} />
@@ -45,9 +38,11 @@ import Cards from './Components/Tired/Cards.jsx';
                   <Route path='/excitedgames' element={<Games/>}/>
                   <Route path='/crafts' element={<Crafts/>}/>
                   <Route path='/drawing' element={<DrawingPad/>}/>
-                  
-
-  
+                  <Route path='/global' element={<Global/>}/>
+                  <Route path='/calmcorner' element={<Calmcorner/>}/>
+                  <Route path='/braverymsg' element={<Braverymsg/>}/>
+                  <Route path='/yoga' element={<Yoga/>}/>
+                  <Route path='/creativecalm' element={<CreativeCalm/>}/>
               </Routes>
           </Router>
           

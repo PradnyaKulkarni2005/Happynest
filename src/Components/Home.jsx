@@ -75,18 +75,9 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Radial Gradient Sections */}
-      <div className="radial-gradient radial-gradient-1">
-        <div className="gradient-label">Story Land Adventures!</div>
-      </div>
+      
 
-      <div className="radial-gradient radial-gradient-2">
-        <div className="gradient-label">Tune Time!</div>
-      </div>
-
-      {/* Bottom Labels */}
-      <div className="bottom-label bottom-label-game-on">Game On!</div>
-      <div className="bottom-label bottom-label-did-you-know">Did You Know?</div>
+      
     </div>
   );
 };

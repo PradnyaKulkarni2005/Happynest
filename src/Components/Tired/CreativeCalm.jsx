@@ -1,6 +1,6 @@
 import React from 'react'
 import games from '../../data/creativecalm.json'
-import Gamescard from '../../Components/Gamescard'; // Example of a different location
+import Gamescard from '../../Components/Gamescard'; 
 import '../Excited/gamescss.css'
 
 
@@ -10,7 +10,7 @@ export default function CreativeCalm() {
       <div className='main'>
         <div className='games'>
         {games.map((card, id) => {
-          return <Gamescard key={id} card={card} />; 
+          return <Gamescard key={id} card={card} />;
         })}
       </div>
       </div>

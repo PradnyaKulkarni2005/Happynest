@@ -1,25 +1,17 @@
-import React from 'react'
-import './gamescard.css'
+import React from "react";
+import "./gamescard.css";
 
-export default function Gamescard({ card: { title, url, description,imgurl} }) {
+const GamesCard = ({ card }) => {
   return (
-    <div>
-        
-<div class="card">
-<a href={url}>
-  <div class="img">
-   <img src={imgurl} alt="" />
-  </div>
-  </a>
-
-  <div class="text">
-    <p class="h3"> {title}</p>
-    <p class="p">{description} </p>
-
+    <div className="card">
+      <div className="img">
+        <img src={card.imgurl} alt={card.title} />
       </div>
-  </div>
-</div>
-      
-    
-  )
-}
+      <div className="text">
+        <h3>{card.title}</h3>
+      </div>
+    </div>
+  );
+};
+
+export default GamesCard;

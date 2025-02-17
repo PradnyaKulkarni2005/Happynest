@@ -1,7 +1,11 @@
-.main {
+
+.braverycontainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(3, 1fr); /* 4 cards per row */
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 .first{
   margin: 2%;
