@@ -1,10 +1,20 @@
 import React from 'react'
 import styles from './styles.module.css'
+import { useNavigate } from 'react-router-dom';
 export default function Bored() {
+  const navigate = useNavigate(); 
+  
+    const handleClick = (soundFile, route) => {
+      const audio = new Audio(process.env.PUBLIC_URL + soundFile);
+      audio.play(); // Play the sound
+      setTimeout(() => {
+        navigate(route); // Navigate to the route after the sound starts playing
+      }, 300); // Delay navigation slightly to allow the sound to play
+    };
   return (
     <div className={`${styles.commoncontainer} ${styles.boredcontainer}`}>
       <div>
-  <img className={`${styles.image} ${styles.image1}`}src="https://i.imgur.com/CgKKmRw.png" />
+  <img className={`${styles.image} ${styles.image1}`}src="https://i.imgur.com/CgKKmRw.png"  onClick={() => handleClick('/pop-1.mp3', '/puzzles')}  />
   <div className={`${styles.backgroundBlock} ${styles.block1} ${styles.boredblock1}`} />
   <div className={`${styles.backgroundBlock} ${styles.block2} ${styles.boredblock3}`} />
   <div className={`${styles.backgroundBlock} ${styles.block3} ${styles.boredblock4}`} />

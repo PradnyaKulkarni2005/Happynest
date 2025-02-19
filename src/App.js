@@ -20,6 +20,7 @@ import Global from './Components/Curious/Global'
 import Calmcorner from './Components/Scared/Calmcorner'
 import Braverymsg from './Components/Scared/Braverymsg.jsx'
 import Yoga from './Components/Scared/Yoga.jsx';
+import Puzzles from './Components/Bored/Puzzles.jsx';
   
   function App() {
     return (
@@ -43,6 +44,7 @@ import Yoga from './Components/Scared/Yoga.jsx';
                   <Route path='/braverymsg' element={<Braverymsg/>}/>
                   <Route path='/yoga' element={<Yoga/>}/>
                   <Route path='/creativecalm' element={<CreativeCalm/>}/>
+                  <Route path='/puzzles' element={<Puzzles/>}/>
               </Routes>
           </Router>
           
