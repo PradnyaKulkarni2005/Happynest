@@ -14,18 +14,23 @@ export default function Curious() {
     };
   
   return (
-    <div className={`${styles.commoncontainer} ${styles.curiouscontainer}`}>
-      <div>
-  <img className={`${styles.image} ${styles.image1}`}src="https://i.imgur.com/wTmoO1A.png" />
-  <div style={{ background: '#001845', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}} className={`${styles.backgroundBlock} ${styles.block1}`} />
-  <div style={{width: 470, height: 93, left: 265, top: 541, position: 'absolute', background: '#142E14', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}}  />
-  <div style={{background: '#5B3D27', boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)'}} className={`${styles.backgroundBlock} ${styles.block4}`} />
-  <div style={{ color: '#D8E2DC'}} className={`${styles.text} ${styles.text1}`}>Mystery Mindbenders</div>
-  <img className={`${styles.image} ${styles.image2}`} src="https://i.imgur.com/WheG8UG.png" onClick={() => handleClick('/pop-1.mp3', '/global')}  />
-  <div style={{ color: '#FEC89A'}} className={`${styles.text} ${styles.text2}`}>Exploring Global Treasures</div>
-  <div style={{width: 289, height: 42, left: 345, top: 570, position: 'absolute', textAlign: 'center', color: '#B2FF9E', fontSize: 32, fontFamily: 'Fredoka One', fontWeight: '400', wordWrap: 'break-word'}}>Curious Corner</div>
-  <img style={{width: 470, height: 280, left: 265, top: 631, position: 'absolute'}} src="https://i.imgur.com/85h4waG.png" />
-</div>
+
+<div className={`${styles.container} ${styles.curious}`}>
+      <div className={styles.card} onClick={() => navigate('/music')}>
+        <div className={`${styles.title} ${styles.mystery}`}>Mystery Mindbenders</div>
+        <img src="https://i.imgur.com/wTmoO1A.png" alt="Mystery Mindbenders" />
+      </div>
+
+      <div className={styles.card} onClick={() => handleClick('/pop-1.mp3', '/global')}>
+        <div className={`${styles.title} ${styles.global}`}>Exploring Global Treasures</div>
+        <img src="https://i.imgur.com/WheG8UG.png" alt="Exploring Global Treasures" />
+      </div>
+
+      <div className={styles.card} onClick={() => navigate('/creativecalm')}>
+        <div className={`${styles.title} ${styles.curiouscorner}`}>Curious Corner</div>
+        <img src="https://i.imgur.com/85h4waG.png" alt="Curious Corner" />
+      </div>
     </div>
+    
   )
 }

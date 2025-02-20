@@ -21,6 +21,8 @@ import Calmcorner from './Components/Scared/Calmcorner'
 import Braverymsg from './Components/Scared/Braverymsg.jsx'
 import Yoga from './Components/Scared/Yoga.jsx';
 import Puzzles from './Components/Bored/Puzzles.jsx';
+import Didyouknow from './Components/Bored/Didyouknow.jsx';
+import Brainbattle from './Components/Bored/Brainbattle.jsx';
   
   function App() {
     return (
@@ -45,13 +47,12 @@ import Puzzles from './Components/Bored/Puzzles.jsx';
                   <Route path='/yoga' element={<Yoga/>}/>
                   <Route path='/creativecalm' element={<CreativeCalm/>}/>
                   <Route path='/puzzles' element={<Puzzles/>}/>
+                  <Route path='/didyouknow' element={<Didyouknow/>}/>
+                  <Route path='/brainbattle' element={<Brainbattle/>}/>
               </Routes>
           </Router>
-          
-  
       </div>
     );
   }
-  
   export default App;
   

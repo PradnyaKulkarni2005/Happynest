@@ -14,46 +14,25 @@ export default function Excited() {
   };
 
   return (
-    <div className={`${styles.commoncontainer} ${styles.excitedcontainer}`}>
-      {/* First Image and Text */}
-      <img 
-        className={`${styles.image} ${styles.image1}` }
-        src="https://i.imgur.com/ucCacMh.png" 
-        alt="Cheerful Tunes"
-        onClick={() => handleClick('/pop-1.mp3', '/tunes')} 
-      />
-      <div className={`${styles.backgroundBlock} ${styles.block1} ${styles.excitedblock1}`}></div>
-      <div className={`${styles.text} ${styles.text1}`}>Cheerful Tunes for Happy Hearts!</div>
-
-      {/* Second Image and Text */}
-      <img 
-        className={`${styles.image} ${styles.image2}` }
-        src="https://i.imgur.com/5uaA9eL.png" 
-        alt="DIY Adventures"
-        onClick={() => handleClick('/pop-1.mp3', '/crafts')} 
-      />
-      <div className={`${styles.backgroundBlock} ${styles.block4} ${styles.excitedblock4}`}></div>
-      <div className={`${styles.text} ${styles.text2}`}>Dive Into DIY Adventures!</div>
-
-      {/* Third Image and Text */}
-      <img 
-        className={`${styles.image} ${styles.image3}` } 
-        src="https://i.imgur.com/3Agpvsl.png" 
-        alt="Game On"
-        onClick={() => handleClick('/pop-1.mp3', '/excitedgames')} 
-      />
-      <div className={`${styles.backgroundBlock} ${styles.block2} ${styles.excitedblock2}`}></div>
-      <div className={`${styles.text} ${styles.text3}`}>Game On!</div>
-
-      {/* Fourth Image and Text */}
-      <img 
-        className={`${styles.image} ${styles.image4}` } 
-        src="https://i.imgur.com/6wz6Vdl.png" 
-        alt="Inner Artist"
-        onClick={() => handleClick('/pop-1.mp3', '/drawing')} 
-      />
-      <div className={`${styles.backgroundBlock} ${styles.block3} ${styles.excitedblock3}`}></div>
-      <div className={`${styles.text} ${styles.text4}`}>Explore Your Inner Artist</div>
-    </div>
+    <div className={`${styles.container} ${styles.excited}`}>
+          <div className={styles.card} onClick={() => handleClick('/pop-1.mp3', '/tunes')}>
+            <div className={`${styles.title} ${styles.tunes}`}> Cheerful Tunes for Happy Hearts!</div>
+            <img src="https://i.imgur.com/ucCacMh.png" alt="tunes" />
+          </div>
+    
+          <div className={styles.card} onClick={() => handleClick('/pop-1.mp3', '/crafts')} >
+            <div className={`${styles.title} ${styles.diy}`}>Dive Into DIY Adventures!</div>
+            <img src="https://i.imgur.com/5uaA9eL.png" alt="diy" />
+          </div>
+    
+          <div className={styles.card} onClick={() => handleClick('/pop-1.mp3', '/excitedgames')}>
+            <div className={`${styles.title} ${styles.games}`}>Game On!</div>
+            <img src="https://i.imgur.com/3Agpvsl.png" alt="Game On! " />
+          </div>
+          <div className={styles.card} onClick={() => handleClick('/pop-1.mp3', '/drawing')}>
+            <div className={`${styles.title} ${styles.artist}`}>Explore Your Inner Artist</div>
+            <img src="https://i.imgur.com/6wz6Vdl.png" alt="Explore Your Inner Artist" />
+          </div>
+        </div>
   );
 }
