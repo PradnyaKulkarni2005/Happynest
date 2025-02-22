@@ -28,8 +28,8 @@ export default function Bored() {
         <img src="https://i.imgur.com/0WfNUFK.png" alt="fun facts"  />
       </div>
       <div className={styles.card} >
-        <div className={`${styles.title} ${styles.surprise}`}>Hit the button and let the fun find you !!</div>
-        <img src="https://i.imgur.com/n6jWcgr.png" alt="creative calm" onClick={() => handleClick('/pop-1.mp3', '/didyouknow')} />
+        
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3JocGZkZmdvY2k1bTFsdWR4Ym1mb3hxdXZ6bWIyMDdjN3draGVmYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ornjXIs8DP8BEovok/giphy.gif" alt="creative calm"  />
       </div>
     </div>
     

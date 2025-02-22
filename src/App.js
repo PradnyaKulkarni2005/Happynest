@@ -26,6 +26,7 @@ import Brainbattle from './Components/Bored/Brainbattle.jsx';
 import Riddlelist from './Components/Curious/Riddlelist.jsx';
 import SongList from './Components/SongList.jsx';
 import Tunes from './Components/Excited/Tunes.jsx';
+import Curiouscorner from './Components/Curious/Curiouscorner.jsx';
   function App() {
     return (
        <div className="App">
@@ -56,6 +57,7 @@ import Tunes from './Components/Excited/Tunes.jsx';
                   <Route path='/tunes' element={<Tunes/>}/>
 
         <Route path="/songs/:language" element={<SongList />} />
+        <Route path='/curiouscorner' element={<Curiouscorner/>}/>
               </Routes>
           </Router>
       </div>

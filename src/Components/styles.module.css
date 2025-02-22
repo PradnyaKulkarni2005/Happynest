@@ -287,6 +287,32 @@
     background-color: #D03E1A;
     color:#D3F8E2;
   }
+  .curiouscard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+   
+  }
+  .imgWrapper {
+    height: 200px;          /* Fixed height for consistency */
+    width: 100%;            /* Full width of parent */
+    overflow: hidden;       /* Hide any overflow for uniformity */
+    display: flex;          /* Center the GIF */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gifi {
+    height: 100%;           /* Occupy full height of wrapper */
+    width: auto;            /* Maintain aspect ratio */
+    object-fit: cover;      /* Scale the GIF properly without distortion */
+  }
+  .curiouscontainer{
+    margin: 20px;
+  }
+  
   
   /* Responsive Design */
   @media (max-width: 768px) {

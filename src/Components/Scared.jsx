@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as  useNavigate } from 'react-router-dom';
 export default function Scared() {
   const navigate = useNavigate(); 
   
@@ -27,6 +27,12 @@ export default function Scared() {
         <div className={`${styles.title} ${styles.boosters}`}>Braveheart Boosters</div>
         <img src="https://i.imgur.com/jxFC511.png" alt="Braveheart Boosters" />
       </div>
+      <div className={styles.card}>
+        
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXZ5YWVmeTE1NWlkcGhkcmRhZXJ0bGhlcnpib2swOHJieHdndHRpMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JBOKvxKzNHRfO/giphy.gif" alt="Braveheart Boosters" />
+      </div>
+      
+
     </div>
   )
 }
