@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as  useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import styles from'./styles.module.css'
 
 export default function Curious() {

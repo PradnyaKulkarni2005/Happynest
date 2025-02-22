@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css';
-import { BrowserRouter as  useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 export default function Scared() {
   const navigate = useNavigate(); 
   
