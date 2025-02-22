@@ -2,7 +2,7 @@ import React from 'react'
 import './cardcss.css'
 export default function Card({card:{title,imgurl}}) {
   return (
-    <div className='first'>
+    <div >
       <div className="main">
        <div className="card">
   <img src={imgurl} className='cardimg' alt="" />
