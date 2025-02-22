@@ -1,9 +1,12 @@
-
+.seconddiv{
+  padding: 5px;
+}
 .cards {
   display: flex;
   flex-direction: column;
   gap: 15px;
   align-items: center;
+  
 }
 
 .cards .red {

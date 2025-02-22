@@ -1,0 +1,108 @@
+/* From Uiverse.io by bhaveshxrawat */ 
+/* From Uiverse.io by alexruix */ 
+
+.textcard {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+   }
+   
+   .textcard::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 80%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+   }
+   
+   .textcard-info {
+    --color: #181818;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+   }
+   
+   .textcard:hover::after {
+    opacity: 0;
+   }
+   
+   .textcard:hover .textcard-info {
+    color: #f7ba2b;
+    transition: color 1s;
+   }
+   
+  .question{
+    color: white;
+    z-index: 1;
+    font-size: 30px;
+    font-family: 'Fredoka';
+  } 
+  .maindivision{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 40px; 
+    padding: 20px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+  }
+  
+  /* From Uiverse.io by mrhyddenn */ 
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;    
+    transition: 0.5s;
+    transition-property: box-shadow;
+    width: fit-content;
+    
+    
+  }
+  
+  .shadow__btn {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+  .shadow__btn::after{
+    background: rgb(2, 38, 2);
+  }
+  
+  
+  

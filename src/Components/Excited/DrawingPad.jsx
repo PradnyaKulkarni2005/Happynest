@@ -2,81 +2,67 @@ import React, { useRef, useState } from 'react';
 import './DrawingPad.css'; // Optional: For styling the canvas
 
 const DrawingPad = () => {
-  // Reference to the canvas DOM element
   const canvasRef = useRef(null);
   const ctxRef = useRef(null);
-  
-  // State to store the current color and brush size
+
   const [color, setColor] = useState("#000000");
   const [brushSize, setBrushSize] = useState(5);
-
-  // To keep track of the drawing state (is drawing or not)
   const [isDrawing, setIsDrawing] = useState(false);
   const [lastPos, setLastPos] = useState({ x: 0, y: 0 });
 
-  // Initialize canvas when component mounts
   const initCanvas = () => {
     const canvas = canvasRef.current;
-    canvas.width = window.innerWidth - 20; // Resize to window width
-    canvas.height = window.innerHeight - 100; // Resize to window height (leaving space for buttons)
+    canvas.width = window.innerWidth - 20;
+    canvas.height = window.innerHeight - 100;
     const ctx = canvas.getContext("2d");
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     ctxRef.current = ctx;
   };
 
-  // Handle starting to draw
   const handleMouseDown = (e) => {
     setIsDrawing(true);
-    const canvas = canvasRef.current;
     const x = e.nativeEvent.offsetX;
     const y = e.nativeEvent.offsetY;
     setLastPos({ x, y });
   };
 
-  // Handle drawing
   const handleMouseMove = (e) => {
     if (!isDrawing) return;
-
-    const canvas = canvasRef.current;
     const x = e.nativeEvent.offsetX;
     const y = e.nativeEvent.offsetY;
-
     const ctx = ctxRef.current;
-
     ctx.beginPath();
-    ctx.moveTo(lastPos.x, lastPos.y); // Move to the previous position
-    ctx.lineTo(x, y); // Draw a line to the current position
-    ctx.strokeStyle = color; // Set stroke color
-    ctx.lineWidth = brushSize; // Set brush size
+    ctx.moveTo(lastPos.x, lastPos.y);
+    ctx.lineTo(x, y);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = brushSize;
     ctx.stroke();
-
-    setLastPos({ x, y }); // Update last position
+    setLastPos({ x, y });
   };
 
-  // Stop drawing
-  const handleMouseUp = () => {
-    setIsDrawing(false);
-  };
+  const handleMouseUp = () => setIsDrawing(false);
 
-  // Clear canvas
   const clearCanvas = () => {
     const canvas = canvasRef.current;
     const ctx = ctxRef.current;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   };
 
-  // Change color
-  const changeColor = (newColor) => {
-    setColor(newColor);
+  const changeColor = (newColor) => setColor(newColor);
+
+  const changeBrushSize = (size) => setBrushSize(size);
+
+  // ⭐ Save canvas as an image
+  const saveCanvas = () => {
+    const canvas = canvasRef.current;
+    const image = canvas.toDataURL("image/png"); // Convert canvas to PNG
+    const link = document.createElement("a");
+    link.href = image;
+    link.download = "drawing.png"; // File name
+    link.click(); // Trigger download
   };
 
-  // Change brush size
-  const changeBrushSize = (size) => {
-    setBrushSize(size);
-  };
-
-  // Initialize canvas when the component mounts
   React.useEffect(() => {
     initCanvas();
   }, []);
@@ -92,13 +78,14 @@ const DrawingPad = () => {
           <button onClick={() => changeColor("#FFFF00")} style={{ backgroundColor: "#FFFF00" }}></button>
         </div>
 
-        <div className="brush-size">
-          <button onClick={() => changeBrushSize(5)}>Small</button>
-          <button onClick={() => changeBrushSize(10)}>Medium</button>
-          <button onClick={() => changeBrushSize(20)}>Large</button>
+        <div className='brush-size'>
+          <button className="brush" onClick={() => changeBrushSize(5)}>Small</button>
+          <button className="brush" onClick={() => changeBrushSize(10)}>Medium</button>
+          <button className="brush" onClick={() => changeBrushSize(20)}>Large</button>
         </div>
 
-        <button onClick={clearCanvas} className="clear-button">Clear</button>
+        <button onClick={clearCanvas} className="clear">Clear</button>
+        <button onClick={saveCanvas} className="button">Save</button> {/* 💾 Save button added */}
       </div>
 
       <canvas

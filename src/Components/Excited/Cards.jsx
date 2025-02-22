@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./cards_css.css";
+import "../Tired/cards_css.css";
 
 export default function Cards() {
   const navigate = useNavigate();
@@ -12,13 +12,13 @@ export default function Cards() {
   return (
     <div className="seconddiv">
       <div className="cards">
-        <div className="card red" onClick={() => handleClick("sleepyenglish")}>
+        <div className="card red" onClick={() => handleClick("excitedenglish")}>
           <p className="tip">English</p>
         </div>
-        <div className="card blue" onClick={() => handleClick("sleepymarathi")}>
+        <div className="card blue" onClick={() => handleClick("excitedmarathi")}>
           <p className="tip">Marathi</p>
         </div>
-        <div className="card green" onClick={() => handleClick("sleepyhindi")}>
+        <div className="card green" onClick={() => handleClick("excitedhindi")}>
           <p className="tip">Hindi</p>
         </div>
       </div>

@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 } 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Fredoka:wdth,wght@80.8,300..700&family=Luckiest+Guy&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .btn {
   width: 130px;
   height: 40px;
@@ -13,11 +14,9 @@
   border: none;
   border-radius: 5px;
   transition: all .4s;
-  margin:10%;
+  margin:5%;
 }
-/* .description{
-  display: none;
-} */
+
  
  .btn:hover {
   border-radius: 5px;
@@ -45,11 +44,6 @@
   
   /* First text block */
   .text-block-1 {
-    /* width: 1099px;
-    height: 131px;
-    left: 170px;
-    top: 325px; */
-    position: absolute;
     text-align: center;
     color: #FFF3B0;
     font-size: 62px;
@@ -60,15 +54,11 @@
   
   /* Second text block */
   .text-block-2 {
-    width: 988px;
-    height: 112px;
-    left: 226px;
-    top: 475px;
-    position: absolute;
+    
     text-align: center;
     color: #EDE0D4;
     font-size: 38px;
-    font-family: 'Fredoka One', sans-serif;
+    font-family: 'Fredoka';
     font-weight: 400;
     word-wrap: break-word;
   }

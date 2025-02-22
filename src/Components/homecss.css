@@ -56,12 +56,12 @@ body {
     /* width: 773px;
     height: 74px; */
     position: absolute;
-    left: -2px;
+    left: 15px;
     top: 150px;
     text-align: center;
     color: #2c0703;
     font-size: 48px;
-    font-family: 'Roboto';
+    font-family: 'Fredoka';
     font-weight: bold;
     
     word-wrap: break-word;

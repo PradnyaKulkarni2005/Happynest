@@ -1,0 +1,10 @@
+.songscontainer{
+    
+    background: linear-gradient(180deg, #FFDDD2 0%, #CAF0F8 100%);
+}
+.songsmaincontainer{
+    margin: 20px;
+}
+.songscard{
+    padding: 8px;
+}

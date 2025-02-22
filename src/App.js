@@ -23,7 +23,9 @@ import Yoga from './Components/Scared/Yoga.jsx';
 import Puzzles from './Components/Bored/Puzzles.jsx';
 import Didyouknow from './Components/Bored/Didyouknow.jsx';
 import Brainbattle from './Components/Bored/Brainbattle.jsx';
-  
+import Riddlelist from './Components/Curious/Riddlelist.jsx';
+import SongList from './Components/SongList.jsx';
+import Tunes from './Components/Excited/Tunes.jsx';
   function App() {
     return (
        <div className="App">
@@ -37,7 +39,7 @@ import Brainbattle from './Components/Bored/Brainbattle.jsx';
                   <Route path="/curious" element={<Curious/>} />
                   <Route path="/music" element={<Music/>} />
                   <Route path="/story" element={<Story/>}/>
-                  <Route path='/videos' element={<Videos/>}/>
+                  <Route path="/videos" element={<Videos />} />
                   <Route path='/excitedgames' element={<Games/>}/>
                   <Route path='/crafts' element={<Crafts/>}/>
                   <Route path='/drawing' element={<DrawingPad/>}/>
@@ -49,6 +51,11 @@ import Brainbattle from './Components/Bored/Brainbattle.jsx';
                   <Route path='/puzzles' element={<Puzzles/>}/>
                   <Route path='/didyouknow' element={<Didyouknow/>}/>
                   <Route path='/brainbattle' element={<Brainbattle/>}/>
+                  <Route path='/riddle' element={<Riddlelist/>}/>
+                  <Route path="/" element={<Cards />} />
+                  <Route path='/tunes' element={<Tunes/>}/>
+
+        <Route path="/songs/:language" element={<SongList />} />
               </Routes>
           </Router>
       </div>

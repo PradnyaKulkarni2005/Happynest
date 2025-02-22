@@ -13,6 +13,9 @@
     margin-bottom: 10px;
     padding: 0 20px;
   }
+  .brush-size{
+    display: flex;
+  }
   
   .color-picker button {
     width: 30px;
@@ -28,19 +31,102 @@
     cursor: pointer;
   }
   
-  .clear-button {
-    padding: 10px 20px;
-    margin-left: 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
+ /* From Uiverse.io by lenfear23 */ 
+.brush {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 50px;
+  background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+  border-radius: 30px;
+  border: 1px solid #8F9092;
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #606060;
+  text-shadow: 0 1px #fff;
+}
+
+.brush:hover {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+}
+
+.brush:active {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+.brush:focus {
+  box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
+}
+
+
+
   
   canvas {
     border: 1px solid #000;
     margin-top: 20px;
     cursor: crosshair;
   }
+  .button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   .button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+/* From Uiverse.io by virus231 */ 
+.clear {
+  background: linear-gradient(140.14deg, #ec540e 15.05%, #d6361f 114.99%)
+      padding-box,
+    linear-gradient(142.51deg, #ff9465 8.65%, #af1905 88.82%) border-box;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  font-family: inherit;
+  text-shadow: 1px 1px 1px #00000040;
+  box-shadow: 8px 8px 20px 0px #45090059;
+
+  padding: 10px 40px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.clear:hover {
+  box-shadow: none;
+  opacity: 80%;
+}
+
+
+
   

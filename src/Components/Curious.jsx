@@ -16,7 +16,7 @@ export default function Curious() {
   return (
 
 <div className={`${styles.container} ${styles.curious}`}>
-      <div className={styles.card} onClick={() => navigate('/music')}>
+      <div className={styles.card} onClick={() => handleClick('/pop-1.mp3', '/riddle')}>
         <div className={`${styles.title} ${styles.mystery}`}>Mystery Mindbenders</div>
         <img src="https://i.imgur.com/wTmoO1A.png" alt="Mystery Mindbenders" />
       </div>
@@ -26,9 +26,9 @@ export default function Curious() {
         <img src="https://i.imgur.com/WheG8UG.png" alt="Exploring Global Treasures" />
       </div>
 
-      <div className={styles.card} onClick={() => navigate('/creativecalm')}>
+      <div className={styles.card} onClick={() => navigate('/pop-1.mp3','/creativecalm')}>
         <div className={`${styles.title} ${styles.curiouscorner}`}>Curious Corner</div>
-        <img src="https://i.imgur.com/85h4waG.png" alt="Curious Corner" />
+        <img src="https://i.imgur.com/85h4waG.png" alt="Curious Corner"/>
       </div>
     </div>
     
