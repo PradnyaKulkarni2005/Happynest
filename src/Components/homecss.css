@@ -14,7 +14,6 @@ body {
     color: #0e0e52;
     padding-top: 40px;
     padding: 4px;
-   
     color: #0C031E;
     
     font-family: 'Fredoka';
@@ -22,13 +21,7 @@ body {
     word-wrap: break-word;
   }
   
-  .background-image {
-    width: 1440px;
-    height: 1024px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+  
   
   
   .mood-container{
@@ -41,8 +34,8 @@ body {
   }
   
   .mood-image {
-    width: 150px;
-  height: 150px;
+    width: 180px;
+  height: 180px;
   object-fit: contain;
     
     cursor: pointer;
@@ -97,6 +90,7 @@ body {
   }
 
     .heading {
+      margin: 6px;
       text-align: center;
       font-size: 2.9rem;
       font-weight: 600;

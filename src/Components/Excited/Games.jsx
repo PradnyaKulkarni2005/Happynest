@@ -1,6 +1,6 @@
 import React from 'react'
 import games from '../../data/excitedgames.json'
-import Gamescard from '../../Components/Gamescard'; // Example of a different location
+import Gamescard from '../../Components/Gamescard';
 import './gamescss.css'
 
 
